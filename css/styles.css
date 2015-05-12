@@ -1,0 +1,173 @@
+/***
+ * Styles
+ */
+.wrapper {
+    padding: 30px;
+}
+.clearfix:before, .clearfix:after {
+    content: "";
+    display: block;
+}
+.clearfix:after {
+    content: "";
+    clear: both;
+}
+ul {
+    padding: 0 10px;
+    list-style: none;
+}
+
+li {
+    font-weight: bold;
+    font-size: 16px;
+    padding: 5px 0;
+}
+
+h2 {
+    padding: 5px 10px;
+    background: #EAE9E9;
+}
+.content {
+    padding: 20px;
+}
+/***
+ * battery
+ */
+.battery {
+    width: 25%;
+    height: 50px;
+    border: 1px solid black;
+    float: right;
+    position: relative;
+}
+.battery-cell {
+    height: 50px;
+    width: 25%;
+    position: relative;
+    float: left;
+    background: red;
+}
+.battery-cell:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 1px;
+    height: 50px;
+    background: black;
+}
+
+.battery-cell:first-of-type:after {
+    content: "";
+    width: 0;
+}
+
+.battery-0 {
+
+}
+.battery-20 {
+
+}
+.battery-40 {
+
+}
+
+.battery-0 .battery-cell {
+    background: red;
+}
+
+.battery-20 .battery-cell.pos-4 {
+    background: #16bb51;
+}
+
+.battery-40 .battery-cell.pos-3,
+.battery-40 .battery-cell.pos-4 {
+    background: #16bb51;
+}
+
+.battery-60 .battery-cell.pos-2,
+.battery-60 .battery-cell.pos-3,
+.battery-60 .battery-cell.pos-4 {
+    background: #16bb51;
+}
+
+.battery-80 .battery-cell{
+    background: #16bb51;
+}
+.battery-100 .battery-cell, .battery-100 .battery-cell:first-of-type {
+    background: #16bb51;
+}
+
+.battery-cell:first-of-type {
+    position: absolute;
+    left: -10px;
+    width: 5%;
+    top: 10px;
+    height: 30px;
+    border: 1px solid black;
+    background: red;
+}
+
+/***
+ * Controll buttons
+ */
+.buttons-wrapper {
+    background: #eee;
+    position: absolute;
+    top: 120px;
+    bottom: 20%;
+    left: 40%;
+    right: 0;
+}
+.controll-buttons {
+    width: 20%;
+    position: absolute;
+    height: 30px;
+    background: rgb(0, 120, 231);
+}
+.cw {
+    top: 0;
+    left: 0;
+}
+.forward{
+    top: 0;
+    left: 45%;
+}
+.ccw{
+    top: 0;
+    right: 0;
+}
+.left{
+    top: 40%;
+    left: 0;
+}
+.right{
+    top: 40%;
+    right: 0;
+}
+.bottom{
+    bottom: 0;
+    left: 45%;
+}
+/***
+ * Additional buttons
+ */
+.pure-button-red {
+    background: red;
+    text-transform: uppercase;
+    color: white;
+    font-weight: bold;
+    /*text-shadow: 1px 1px 1px rgb(170, 46, 23);*/
+    border: 3px solid rgb(131, 2, 2);
+    border-radius: 20px;
+}
+
+.pure-button-green {
+    background: #16bb51;
+    text-transform: uppercase;
+    color: white;
+    font-weight: bold;
+    /*text-shadow: 1px 1px 1px rgb(170, 46, 23);*/
+    border: 3px solid rgb(22, 116, 29);
+    border-radius: 20px;
+}
